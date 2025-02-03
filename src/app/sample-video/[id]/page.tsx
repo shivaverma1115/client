@@ -1,5 +1,6 @@
 'use client'
 import Breadcrumb from "@/components/common/breadcrumb/Breadcrumb";
+import Preloader from "@/components/common/Preloader";
 import SampleVideoMain from "@/components/sample-video/SampleVideoMain";
 import { IWeddingInfoType } from "@/interFace/interFace";
 import axios from "axios";
@@ -26,7 +27,7 @@ const Page = () => {
         handleFetchWeddingInfos();
     }, [id])
     console.log(weddingInfo)
-    if (!weddingInfo) return <h1>...Loading</h1>
+    if (!weddingInfo) return <Preloader />
     return (
         <>
             <main>
