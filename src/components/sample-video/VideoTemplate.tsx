@@ -120,7 +120,7 @@ export default function VideoTemplate({ weddingInfo: { url, title, isExpired } }
                         >
                             {!isExpired ?
                                 <>
-                                    <Box
+                                    {/* <Box
                                         position="absolute"
                                         top={2}
                                         right={2}
@@ -133,7 +133,7 @@ export default function VideoTemplate({ weddingInfo: { url, title, isExpired } }
                                         pointerEvents="none" // Prevent user interaction
                                     >
                                         Global Creations
-                                    </Box>
+                                    </Box> */}
                                     <video
                                         ref={videoRef}
                                         loop
